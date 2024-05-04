@@ -1,0 +1,151 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  border-radius: 20px;
+}
+
+body {
+  background-color: #780116;
+  text-align: center;
+}
+
+.headbox,
+.newgame {
+  height: fit-content;
+  width: fit-content;
+  background-color: #d8572a;
+  padding: 10px 30px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type="submit"] {
+  background: none;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.headbox li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mainbody {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px;
+}
+
+.scorebox {
+  height: 150px;
+  width: 150px;
+  background-color: #db7c26;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 45px;
+}
+
+.p1 {
+  border-top-left-radius: 0;
+}
+.p2 {
+  border-top-right-radius: 0;
+}
+
+.scorebox p {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+}
+
+.scorebox h2 {
+  font-size: 25px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.gamebox {
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+  background-color: #f7b538;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+
+.gamebox button,
+.gamebox p,
+.gamebox input {
+  border: none;
+  text-align: center;
+  height: 93.3px;
+  width: 93.3px;
+  background-color: #c32f27;
+  font-size: 55px;
+  align-content: center;
+}
+
+.winnerbox {
+  margin-top: 25px;
+}
+
+.winner {
+  font-size: 25px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 950px) {
+  .mainbody {
+    display: block;
+  }
+
+  .gamebox {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .p1 {
+    margin-bottom: 50px;
+  }
+  .p2 {
+    margin-top: 50px;
+  }
+  .scorebox {
+    height: 100px;
+    width: 100px;
+    background-color: #db7c26;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+  }
+
+  .scorebox p {
+    font-size: 16px;
+    text-align: center;
+    color: black;
+  }
+
+  .scorebox h2 {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .winnerbox {
+    margin-bottom: 50px;
+  }
+}

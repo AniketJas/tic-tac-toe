@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe Game</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="headbox">
+      <ul>
+        <li><a href="/">Docs</a></li>
+        <li><input type="submit" value="New Game" onclick="newGame()" /></li>
+        <li><a href="/">About Us</a></li>
+      </ul>
+    </div>
+
+    <div class="mainbody">
+      <div class="scorebox p1">
+        <p>Player 1 (X)</p>
+        <p>SCORE</p>
+        <h2 id="player1score">0</h2>
+      </div>
+
+      <div class="gamebox">
+        <button id="b1" onclick="setbtn1();playerWins();"></button>
+        <button id="b2" onclick="setbtn2();playerWins();"></button>
+        <button id="b3" onclick="setbtn3();playerWins();"></button>
+        <button id="b4" onclick="setbtn4();playerWins();"></button>
+        <button id="b5" onclick="setbtn5();playerWins();"></button>
+        <button id="b6" onclick="setbtn6();playerWins();"></button>
+        <button id="b7" onclick="setbtn7();playerWins();"></button>
+        <button id="b8" onclick="setbtn8();playerWins();"></button>
+        <button id="b9" onclick="setbtn9();playerWins();"></button>
+      </div>
+
+      <div class="scorebox p2">
+        <p>Player 2 (O)</p>
+        <p>SCORE</p>
+        <h2 id="player2score">0</h2>
+      </div>
+    </div>
+
+    <div class="newgame">
+      <input type="submit" value="Play Again" onclick="playAgain()" />
+    </div>
+
+    <div class="winnerbox">
+      <p id="winner"></p>
+    </div>
+  </body>
+
+  <script src="setbox.js"></script>
+</html>
