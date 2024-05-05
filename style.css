@@ -105,6 +105,46 @@ a {
   font-size: 25px;
 }
 
+.gamerule,
+.aboutme {
+  height: fit-content;
+  width: 50%;
+  background-color: #f7b538;
+  padding: 30px;
+  padding-left: 50px;
+  text-align: left;
+  display: none;
+
+  position: absolute;
+  top: 150px;
+  left: 25%;
+
+  animation: top-down 0.2s ease;
+}
+
+.aboutme {
+  background-color: #db7c26;
+  width: 40%;
+  padding: 30px;
+  left: 30%;
+
+  animation: top-down 0.2s ease;
+}
+
+.esc {
+  font-size: 10px;
+  text-align: center;
+}
+
+@keyframes top-down {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 150px;
+  }
+}
+
 /* Responsive */
 
 @media screen and (max-width: 950px) {
