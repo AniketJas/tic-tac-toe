@@ -347,3 +347,23 @@ function playerWins() {
     document.getElementById('player1score').innerHTML = winp1;
     document.getElementById('player2score').innerHTML = winp2;
 }
+
+function openRules() {
+    document.getElementById('gamerule').style.display = 'block';
+
+    document.getElementById('aboutme').style.display = 'none';
+}
+
+function openAbtMe() {
+    document.getElementById('aboutme').style.display = 'block';
+
+    document.getElementById('gamerule').style.display = 'none';
+
+}
+
+window.onkeydown = function (gfg) {
+    if (gfg.keyCode === 27) {
+        document.getElementById('gamerule').style.display = 'none';
+        document.getElementById('aboutme').style.display = 'none    ';
+    };
+}
