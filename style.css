@@ -188,4 +188,10 @@ a {
   .winnerbox {
     margin-bottom: 50px;
   }
+
+  .gamerule,
+  .aboutme {
+    left: 5%;
+    width: 90%;
+  }
 }
