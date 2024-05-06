@@ -58,9 +58,11 @@ a {
 .p1 {
   border-top-left-radius: 0;
 }
+
 .resp-grid {
   display: none;
 }
+
 .p2 {
   border-top-right-radius: 0;
 }
