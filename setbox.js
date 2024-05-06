@@ -358,12 +358,30 @@ function openAbtMe() {
     document.getElementById('aboutme').style.display = 'block';
 
     document.getElementById('gamerule').style.display = 'none';
-
 }
 
 window.onkeydown = function (gfg) {
     if (gfg.keyCode === 27) {
         document.getElementById('gamerule').style.display = 'none';
-        document.getElementById('aboutme').style.display = 'none    ';
+        document.getElementById('aboutme').style.display = 'none';
     };
+}
+
+window.addEventListener('mouseup', function (event) {
+    var popupAbtme = document.getElementById('aboutme');
+    var popupRule = document.getElementById('aboutme');
+
+    if (event.target != popupAbtme && event.target.parentNode != popupAbtme) {
+        document.getElementById('aboutme').style.display = 'none';
+    }
+
+    if (event.target != popupRule && event.target.parentNode != popupRule) {
+        document.getElementById('gamerule').style.display = 'none';
+    }
+})
+
+function is_touch_enabled() {
+    return ('ontouchstart' in window) ||
+        (navigator.maxTouchPoints > 0) ||
+        (navigator.msMaxTouchPoints > 0);
 }
