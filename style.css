@@ -193,6 +193,10 @@ a {
     margin-bottom: 50px;
   }
 
+  .popup {
+    margin-bottom: 300px;
+  }
+
   .gamerule,
   .aboutme {
     width: 80%;
