@@ -369,7 +369,20 @@ window.onkeydown = function (gfg) {
 
 window.addEventListener('mouseup', function (event) {
     var popupAbtme = document.getElementById('aboutme');
-    var popupRule = document.getElementById('aboutme');
+    var popupRule = document.getElementById('gamerule');
+
+    if (event.target != popupAbtme && event.target.parentNode != popupAbtme) {
+        document.getElementById('aboutme').style.display = 'none';
+    }
+
+    if (event.target != popupRule && event.target.parentNode != popupRule) {
+        document.getElementById('gamerule').style.display = 'none';
+    }
+})
+
+window.addEventListener('touchend', function (event) {
+    var popupAbtme = document.getElementById('aboutme');
+    var popupRule = document.getElementById('gamerule');
 
     if (event.target != popupAbtme && event.target.parentNode != popupAbtme) {
         document.getElementById('aboutme').style.display = 'none';
