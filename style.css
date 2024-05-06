@@ -58,6 +58,9 @@ a {
 .p1 {
   border-top-left-radius: 0;
 }
+.resp-grid {
+  display: none;
+}
 .p2 {
   border-top-right-radius: 0;
 }
@@ -163,10 +166,21 @@ a {
 
   .p1 {
     margin-bottom: 50px;
+    display: none;
   }
-  .p2 {
+
+  .resp-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
     margin-top: 50px;
   }
+
+  .p2 {
+    display: none;
+    margin-top: 50px;
+  }
+
   .scorebox {
     height: 100px;
     width: 100px;
@@ -193,12 +207,9 @@ a {
     margin-bottom: 50px;
   }
 
-  .popup {
-    margin-bottom: 300px;
-  }
-
   .gamerule,
   .aboutme {
     width: 80%;
+    margin-bottom: 300px;
   }
 }
