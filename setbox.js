@@ -131,6 +131,8 @@ function playAgain() {
 
     b1btn.disabled = b2btn.disabled = b3btn.disabled = b4btn.disabled = b5btn.disabled = b6btn.disabled = b7btn.disabled = b8btn.disabled = b9btn.disabled = false;
 
+    resetColor();
+
     chk = 0;
     winner.innerHTML = '';
 }
@@ -142,8 +144,26 @@ function newGame() {
     winp1 = 0;
     winp2 = 0;
 
+    resetColor();
+
     document.getElementById('player1score').innerHTML = '0';
+    document.getElementById('player1score-small').innerHTML = '0';
     document.getElementById('player2score').innerHTML = '0';
+    document.getElementById('player2score-small').innerHTML = '0';
+}
+
+// function to reset colors
+
+function resetColor() {
+    b1btn.style.backgroundColor = '#c32f27';
+    b2btn.style.backgroundColor = '#c32f27';
+    b3btn.style.backgroundColor = '#c32f27';
+    b4btn.style.backgroundColor = '#c32f27';
+    b5btn.style.backgroundColor = '#c32f27';
+    b6btn.style.backgroundColor = '#c32f27';
+    b7btn.style.backgroundColor = '#c32f27';
+    b8btn.style.backgroundColor = '#c32f27';
+    b9btn.style.backgroundColor = '#c32f27';
 }
 
 //function to check winner
@@ -156,6 +176,11 @@ function playerWins() {
 
     if (b1btn.value == 'X' && b2btn.value == 'X' && b3btn.value == 'X') {
         winner.innerHTML = 'Player 1 wins';
+
+        b1btn.style.backgroundColor = 'darkgreen';
+        b2btn.style.backgroundColor = 'darkgreen';
+        b3btn.style.backgroundColor = 'darkgreen';
+
         b4btn.disabled = true;
         b5btn.disabled = true;
         b6btn.disabled = true;
@@ -167,6 +192,11 @@ function playerWins() {
 
     else if (b4btn.value == 'X' && b5btn.value == 'X' && b6btn.value == 'X') {
         winner.innerHTML = 'Player 1 wins';
+
+        b4btn.style.backgroundColor = 'darkgreen';
+        b5btn.style.backgroundColor = 'darkgreen';
+        b6btn.style.backgroundColor = 'darkgreen';
+
         b1btn.disabled = true;
         b2btn.disabled = true;
         b3btn.disabled = true;
@@ -178,6 +208,11 @@ function playerWins() {
 
     else if (b7btn.value == 'X' && b8btn.value == 'X' && b9btn.value == 'X') {
         winner.innerHTML = 'Player 1 wins';
+
+        b7btn.style.backgroundColor = 'darkgreen';
+        b8btn.style.backgroundColor = 'darkgreen';
+        b9btn.style.backgroundColor = 'darkgreen';
+
         b1btn.disabled = true;
         b2btn.disabled = true;
         b3btn.disabled = true;
@@ -189,6 +224,11 @@ function playerWins() {
 
     else if (b1btn.value == 'X' && b4btn.value == 'X' && b7btn.value == 'X') {
         winner.innerHTML = 'Player 1 wins';
+
+        b1btn.style.backgroundColor = 'darkgreen';
+        b4btn.style.backgroundColor = 'darkgreen';
+        b7btn.style.backgroundColor = 'darkgreen';
+
         b2btn.disabled = true;
         b3btn.disabled = true;
         b5btn.disabled = true;
@@ -200,6 +240,11 @@ function playerWins() {
 
     else if (b2btn.value == 'X' && b5btn.value == 'X' && b8btn.value == 'X') {
         winner.innerHTML = 'Player 1 wins';
+
+        b2btn.style.backgroundColor = 'darkgreen';
+        b5btn.style.backgroundColor = 'darkgreen';
+        b8btn.style.backgroundColor = 'darkgreen';
+
         b1btn.disabled = true;
         b3btn.disabled = true;
         b4btn.disabled = true;
@@ -211,6 +256,11 @@ function playerWins() {
 
     else if (b3btn.value == 'X' && b6btn.value == 'X' && b9btn.value == 'X') {
         winner.innerHTML = 'Player 1 wins';
+
+        b3btn.style.backgroundColor = 'darkgreen';
+        b6btn.style.backgroundColor = 'darkgreen';
+        b9btn.style.backgroundColor = 'darkgreen';
+
         b1btn.disabled = true;
         b2btn.disabled = true;
         b4btn.disabled = true;
@@ -222,6 +272,11 @@ function playerWins() {
 
     else if (b1btn.value == 'X' && b5btn.value == 'X' && b9btn.value == 'X') {
         winner.innerHTML = 'Player 1 wins';
+
+        b1btn.style.backgroundColor = 'darkgreen';
+        b5btn.style.backgroundColor = 'darkgreen';
+        b9btn.style.backgroundColor = 'darkgreen';
+
         b2btn.disabled = true;
         b3btn.disabled = true;
         b4btn.disabled = true;
@@ -233,6 +288,11 @@ function playerWins() {
 
     else if (b3btn.value == 'X' && b5btn.value == 'X' && b7btn.value == 'X') {
         winner.innerHTML = 'Player 1 wins';
+
+        b3btn.style.backgroundColor = 'darkgreen';
+        b5btn.style.backgroundColor = 'darkgreen';
+        b7btn.style.backgroundColor = 'darkgreen';
+
         b1btn.disabled = true;
         b2btn.disabled = true;
         b4btn.disabled = true;
@@ -246,6 +306,11 @@ function playerWins() {
 
     else if (b1btn.value == 'O' && b2btn.value == 'O' && b3btn.value == 'O') {
         winner.innerHTML = 'Player 2 wins';
+
+        b1btn.style.backgroundColor = 'cyan';
+        b2btn.style.backgroundColor = 'cyan';
+        b3btn.style.backgroundColor = 'cyan';
+
         b4btn.disabled = true;
         b5btn.disabled = true;
         b6btn.disabled = true;
@@ -257,6 +322,11 @@ function playerWins() {
 
     else if (b4btn.value == 'O' && b5btn.value == 'O' && b6btn.value == 'O') {
         winner.innerHTML = 'Player 2 wins';
+
+        b4btn.style.backgroundColor = 'cyan';
+        b5btn.style.backgroundColor = 'cyan';
+        b6btn.style.backgroundColor = 'cyan';
+
         b1btn.disabled = true;
         b2btn.disabled = true;
         b3btn.disabled = true;
@@ -268,6 +338,11 @@ function playerWins() {
 
     else if (b7btn.value == 'O' && b8btn.value == 'O' && b9btn.value == 'O') {
         winner.innerHTML = 'Player 2 wins';
+
+        b7btn.style.backgroundColor = 'cyan';
+        b8btn.style.backgroundColor = 'cyan';
+        b9btn.style.backgroundColor = 'cyan';
+
         b1btn.disabled = true;
         b2btn.disabled = true;
         b3btn.disabled = true;
@@ -279,6 +354,11 @@ function playerWins() {
 
     else if (b1btn.value == 'O' && b4btn.value == 'O' && b7btn.value == 'O') {
         winner.innerHTML = 'Player 2 wins';
+
+        b1btn.style.backgroundColor = 'cyan';
+        b4btn.style.backgroundColor = 'cyan';
+        b7btn.style.backgroundColor = 'cyan';
+
         b2btn.disabled = true;
         b3btn.disabled = true;
         b5btn.disabled = true;
@@ -290,6 +370,11 @@ function playerWins() {
 
     else if (b2btn.value == 'O' && b5btn.value == 'O' && b8btn.value == 'O') {
         winner.innerHTML = 'Player 2 wins';
+
+        b2btn.style.backgroundColor = 'cyan';
+        b5btn.style.backgroundColor = 'cyan';
+        b8btn.style.backgroundColor = 'cyan';
+
         b1btn.disabled = true;
         b3btn.disabled = true;
         b4btn.disabled = true;
@@ -301,6 +386,11 @@ function playerWins() {
 
     else if (b3btn.value == 'O' && b6btn.value == 'O' && b9btn.value == 'O') {
         winner.innerHTML = 'Player 2 wins';
+
+        b1btn.style.backgroundColor = 'cyan';
+        b2btn.style.backgroundColor = 'cyan';
+        b3btn.style.backgroundColor = 'cyan';
+
         b1btn.disabled = true;
         b2btn.disabled = true;
         b4btn.disabled = true;
@@ -312,6 +402,11 @@ function playerWins() {
 
     else if (b1btn.value == 'O' && b5btn.value == 'O' && b9btn.value == 'O') {
         winner.innerHTML = 'Player 2 wins';
+
+        b1btn.style.backgroundColor = 'cyan';
+        b5btn.style.backgroundColor = 'cyan';
+        b9btn.style.backgroundColor = 'cyan';
+
         b2btn.disabled = true;
         b3btn.disabled = true;
         b4btn.disabled = true;
@@ -323,6 +418,11 @@ function playerWins() {
 
     else if (b3btn.value == 'O' && b5btn.value == 'O' && b7btn.value == 'O') {
         winner.innerHTML = 'Player 2 wins';
+
+        b3btn.style.backgroundColor = 'cyan';
+        b5btn.style.backgroundColor = 'cyan';
+        b7btn.style.backgroundColor = 'cyan';
+
         b1btn.disabled = true;
         b2btn.disabled = true;
         b4btn.disabled = true;
@@ -345,5 +445,7 @@ function playerWins() {
         b9btn.disabled = true;
     }
     document.getElementById('player1score').innerHTML = winp1;
+    document.getElementById('player1score-small').innerHTML = winp1;
     document.getElementById('player2score').innerHTML = winp2;
+    document.getElementById('player2score-small').innerHTML = winp2;
 }
