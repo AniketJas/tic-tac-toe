@@ -90,9 +90,7 @@ a {
   gap: 10px;
 }
 
-.gamebox button,
-.gamebox p,
-.gamebox input {
+.gamebox button {
   border: none;
   text-align: center;
   height: 93.3px;
