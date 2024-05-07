@@ -19,13 +19,28 @@ window.onkeydown = function (gfg) {
 }
 
 window.addEventListener('mouseup', function (event) {
-    document.getElementById('aboutme').style.display = 'none';
 
-    document.getElementById('gamerule').style.display = 'none';
+    var gamerule = document.getElementById('gamerule');
+    var abtme = document.getElementById('aboutme');
+
+    if (event.target != gamerule && event.target.parentNode != gamerule) {
+        document.getElementById('gamerule').style.display = 'none';
+    }
+
+    if (event.target != abtme && event.target.parentNode != abtme) {
+        document.getElementById('aboutme').style.display = 'none';
+    }
 })
 
 window.addEventListener('touchend', function (event) {
-    document.getElementById('aboutme').style.display = 'none';
+    var gamerule = document.getElementById('gamerule');
+    var abtme = document.getElementById('aboutme');
 
-    document.getElementById('gamerule').style.display = 'none';
+    if (event.target != gamerule && event.target.parentNode != gamerule) {
+        document.getElementById('gamerule').style.display = 'none';
+    }
+
+    if (event.target != abtme && event.target.parentNode != abtme) {
+        document.getElementById('aboutme').style.display = 'none';
+    }
 })
