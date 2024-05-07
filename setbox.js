@@ -307,9 +307,9 @@ function playerWins() {
     else if (b1btn.value == 'O' && b2btn.value == 'O' && b3btn.value == 'O') {
         winner.innerHTML = 'Player 2 wins';
 
-        b1btn.style.backgroundColor = 'cyan';
-        b2btn.style.backgroundColor = 'cyan';
-        b3btn.style.backgroundColor = 'cyan';
+        b1btn.style.backgroundColor = 'darkgreen';
+        b2btn.style.backgroundColor = 'darkgreen';
+        b3btn.style.backgroundColor = 'darkgreen';
 
         b4btn.disabled = true;
         b5btn.disabled = true;
@@ -323,9 +323,9 @@ function playerWins() {
     else if (b4btn.value == 'O' && b5btn.value == 'O' && b6btn.value == 'O') {
         winner.innerHTML = 'Player 2 wins';
 
-        b4btn.style.backgroundColor = 'cyan';
-        b5btn.style.backgroundColor = 'cyan';
-        b6btn.style.backgroundColor = 'cyan';
+        b4btn.style.backgroundColor = 'darkgreen';
+        b5btn.style.backgroundColor = 'darkgreen';
+        b6btn.style.backgroundColor = 'darkgreen';
 
         b1btn.disabled = true;
         b2btn.disabled = true;
@@ -339,9 +339,9 @@ function playerWins() {
     else if (b7btn.value == 'O' && b8btn.value == 'O' && b9btn.value == 'O') {
         winner.innerHTML = 'Player 2 wins';
 
-        b7btn.style.backgroundColor = 'cyan';
-        b8btn.style.backgroundColor = 'cyan';
-        b9btn.style.backgroundColor = 'cyan';
+        b7btn.style.backgroundColor = 'darkgreen';
+        b8btn.style.backgroundColor = 'darkgreen';
+        b9btn.style.backgroundColor = 'darkgreen';
 
         b1btn.disabled = true;
         b2btn.disabled = true;
@@ -355,9 +355,9 @@ function playerWins() {
     else if (b1btn.value == 'O' && b4btn.value == 'O' && b7btn.value == 'O') {
         winner.innerHTML = 'Player 2 wins';
 
-        b1btn.style.backgroundColor = 'cyan';
-        b4btn.style.backgroundColor = 'cyan';
-        b7btn.style.backgroundColor = 'cyan';
+        b1btn.style.backgroundColor = 'darkgreen';
+        b4btn.style.backgroundColor = 'darkgreen';
+        b7btn.style.backgroundColor = 'darkgreen';
 
         b2btn.disabled = true;
         b3btn.disabled = true;
@@ -371,9 +371,9 @@ function playerWins() {
     else if (b2btn.value == 'O' && b5btn.value == 'O' && b8btn.value == 'O') {
         winner.innerHTML = 'Player 2 wins';
 
-        b2btn.style.backgroundColor = 'cyan';
-        b5btn.style.backgroundColor = 'cyan';
-        b8btn.style.backgroundColor = 'cyan';
+        b2btn.style.backgroundColor = 'darkgreen';
+        b5btn.style.backgroundColor = 'darkgreen';
+        b8btn.style.backgroundColor = 'darkgreen';
 
         b1btn.disabled = true;
         b3btn.disabled = true;
@@ -387,9 +387,9 @@ function playerWins() {
     else if (b3btn.value == 'O' && b6btn.value == 'O' && b9btn.value == 'O') {
         winner.innerHTML = 'Player 2 wins';
 
-        b1btn.style.backgroundColor = 'cyan';
-        b2btn.style.backgroundColor = 'cyan';
-        b3btn.style.backgroundColor = 'cyan';
+        b3btn.style.backgroundColor = 'darkgreen';
+        b6btn.style.backgroundColor = 'darkgreen';
+        b9btn.style.backgroundColor = 'darkgreen';
 
         b1btn.disabled = true;
         b2btn.disabled = true;
@@ -403,9 +403,9 @@ function playerWins() {
     else if (b1btn.value == 'O' && b5btn.value == 'O' && b9btn.value == 'O') {
         winner.innerHTML = 'Player 2 wins';
 
-        b1btn.style.backgroundColor = 'cyan';
-        b5btn.style.backgroundColor = 'cyan';
-        b9btn.style.backgroundColor = 'cyan';
+        b1btn.style.backgroundColor = 'darkgreen';
+        b5btn.style.backgroundColor = 'darkgreen';
+        b9btn.style.backgroundColor = 'darkgreen';
 
         b2btn.disabled = true;
         b3btn.disabled = true;
@@ -419,9 +419,9 @@ function playerWins() {
     else if (b3btn.value == 'O' && b5btn.value == 'O' && b7btn.value == 'O') {
         winner.innerHTML = 'Player 2 wins';
 
-        b3btn.style.backgroundColor = 'cyan';
-        b5btn.style.backgroundColor = 'cyan';
-        b7btn.style.backgroundColor = 'cyan';
+        b3btn.style.backgroundColor = 'darkgreen';
+        b5btn.style.backgroundColor = 'darkgreen';
+        b7btn.style.backgroundColor = 'darkgreen';
 
         b1btn.disabled = true;
         b2btn.disabled = true;
