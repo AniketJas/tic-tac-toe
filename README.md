@@ -1,6 +1,8 @@
 # Tic-tac-toe Game
 Tic-Tac-Toe Game built using HTML5, CSS3, and JavaScript.
 
+Website: https://aniketjas.github.io/tic-tac-toe/
+
 Tic-Tac-Toe is a 2-player game involvign 3x3 grid and two symbols, namely 'X' and 'O'.
 Player who gets one side of grid complete, horizontally, vertically or diagonally wins.
 
